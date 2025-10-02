@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "scanner": "workspace:*",
+    "source": "workspace:*"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.4",
+    "typescript": "^5.9.2"
+  },
+  "module": "index.js",
+  "name": "bakescript",
+  "scripts": {
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --apply .",
+    "format": "biome format .",
+    "format:fix": "biome format --write .",
+    "check": "biome check .",
+    "check:fix": "biome check --write --unsafe ."
+  },
+  "type": "module",
+  "workspaces": [
+    "compiler/*"
+  ]
+}
