@@ -18,6 +18,10 @@
       "recommended": true,
       "suspicious": {
         "noAssignInExpressions": "off"
+      },
+      "complexity": {
+        "noCommaOperator": "off",
+        "noStaticOnlyClass": "off"
       }
     }
   },

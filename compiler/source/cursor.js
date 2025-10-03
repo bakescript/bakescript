@@ -1,3 +1,5 @@
+import { DEFAULT_LENGTH } from "./constants";
+
 class Cursor {
   #column = 1;
   #line = 1;
@@ -11,7 +13,7 @@ class Cursor {
   }
 
   forward(length) {
-    this.#column += length || 1;
+    this.#column += length || DEFAULT_LENGTH;
     return this;
   }
 

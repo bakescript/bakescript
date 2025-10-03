@@ -1,4 +1,6 @@
-class Lexeme {
+import { placeIn } from "./interfaces";
+
+class Lexer {
   #data;
 
   get column() {
@@ -17,13 +19,13 @@ class Lexeme {
     this.#data = data;
   }
 
-  placeIn(stream) {
+  [placeIn](stream) {
     stream.push(this);
     return this;
   }
 
   static create() {
-    return new Lexeme({});
+    return new Lexer({});
   }
 
   static match() {
@@ -31,4 +33,4 @@ class Lexeme {
   }
 }
 
-export { Lexeme };
+export { Lexer };

@@ -1,8 +1,8 @@
-import { Cursor } from "./cursor.js";
-import { File } from "./file.js";
+import { Cursor } from "./cursor";
+import { File } from "./file";
 import { Indice } from "./indice";
 import { cursor, indice } from "./interfaces";
-import { range } from "./range.js";
+import { range } from "./range";
 import { track } from "./track";
 
 class Source {

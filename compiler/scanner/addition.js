@@ -1,7 +1,7 @@
-import { Lexeme } from "./lexeme";
+import { Lexer } from "./lexer";
 import { Type } from "./type";
 
-class Addition extends Lexeme {
+class Addition extends Lexer {
   get type() {
     return Type.ADDITION;
   }

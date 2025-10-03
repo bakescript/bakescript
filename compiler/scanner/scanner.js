@@ -1,3 +1,4 @@
+import { placeIn } from "./interfaces";
 import { tokens } from "./tokens";
 
 const Scanner = {
@@ -8,7 +9,7 @@ const Scanner = {
       tokens
         .find((t) => t.match(source))
         .create(source)
-        .placeIn(stream);
+        [placeIn](stream);
     }
 
     return stream;

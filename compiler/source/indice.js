@@ -1,3 +1,5 @@
+import { DEFAULT_LENGTH } from "./constants";
+
 class Indice {
   #value;
 
@@ -6,7 +8,7 @@ class Indice {
   }
 
   advance(length) {
-    this.#value += length || 1;
+    this.#value += length || DEFAULT_LENGTH;
     return this;
   }
 }

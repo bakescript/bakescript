@@ -1,7 +1,8 @@
-import { Lexeme } from "./lexeme";
+import { Lexer } from "./lexer";
+import { placeIn } from "./interfaces";
 
-class NewLine extends Lexeme {
-  placeIn() {
+class NewLine extends Lexer {
+  [placeIn]() {
     return this;
   }
 
