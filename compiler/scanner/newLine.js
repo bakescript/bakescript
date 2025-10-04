@@ -1,5 +1,5 @@
-import { Lexer } from "./lexer";
 import { placeIn } from "./interfaces";
+import { Lexer } from "./lexer";
 
 class NewLine extends Lexer {
   [placeIn]() {
