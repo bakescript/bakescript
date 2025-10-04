@@ -36,10 +36,11 @@ ESLint: `no-new-without-abstraction` (com regras customizadas).
 ## Relacionada com
 
 - [COMPORTAMENTAL-011]: reforça (Permite a extensão OCP)
-- [COMPORTAMENTAL-015]: substitui (Princípios de Pacote)
+- [ESTRUTURAL-015]: reforça (Princípio de Pacote REP)
 - [CRIACIONAL-003]: complementa (Encapsulamento de Primitivos)
 
 ---
 
 **Criada em**: 2025-10-04
-**Versão**: 1.0
+**Atualizada em**: 2025-10-04
+**Versão**: 1.1
